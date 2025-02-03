@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Maestro - Project Introduction</title>
+    <link href="style.css" rel="stylesheet">
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+
+        body {
+            background: linear-gradient(to bottom, #0f0f0f, #282828);
+            color: #ffffff;
+            line-height: 1.6;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: #1a1a1a;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+        }
+
+        header .image img {
+            width: 50px;
+            background-color: transparent;
+            height: auto;
+        }
+
+        main {
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .main-container {
+            background: rgba(25, 25, 25, 0.9);
+            padding: 30px;
+            border-radius: 16px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.7);
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .img {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 30px;
+        }
+
+        .img img {
+            width: 100px;
+            height: 100px;
+            margin-bottom: 15px;
+        }
+
+        .img p {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #00e676;
+        }
+
+        .sub {
+            font-size: 1.3rem;
+            margin-bottom: 20px;
+            color: #80d8ff;
+        }
+
+        .div-container {
+            font-size: 1rem;
+            line-height: 1.8;
+        }
+
+        .div-container .team {
+            color: #ffab40;
+        }
+
+        .btn {
+            margin-top: 30px;
+        }
+
+        .btn .btn-1 {
+            background: linear-gradient(45deg, #00e676, #00bcd4);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 1rem;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+            transition: background 0.3s, transform 0.2s;
+        }
+
+        .btn .btn-1 a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .btn .btn-1:hover {
+            transform: scale(1.05);
+        }
+
+        .features-section {
+            padding: 40px 20px;
+            display: grid;
+            gap: 2rem;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .feature {
+            background: #121212;
+            border-radius: 12px;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .feature:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.5);
+        }
+
+        .feature img {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            display: block;
+          
+        }
+
+
+        .feature-content {
+            padding: 1.5rem;
+            text-align: center;
+        }
+
+        .feature-title {
+            font-size: 1.3rem;
+            font-weight: bold;
+            color: #00e676;
+            margin-bottom: 0.8rem;
+        }
+
+        .feature-description {
+            font-size: 1rem;
+            color: #b0bec5;
+        }
+
+        @media (max-width: 768px) {
+            .main-container {
+                padding: 20px;
+            }
+
+            .img img {
+                width: 80px;
+                height: 80px;
+            }
+
+            .img p {
+                font-size: 1.8rem;
+            }
+
+            .div-container {
+                font-size: 0.95rem;
+            }
+
+            .btn .btn-1 {
+                padding: 10px 20px;
+                font-size: 0.95rem;
+            }
+
+            .features-section {
+                gap: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="image"><img src="./images/image-editing.png" alt="Project Logo"></div>
+    </header>
+    <main>
+        <div class="main-container">
+            <div class="img">
+                <img src="./images/art-and-design.png" alt="Art and Design">
+                <p>Photo-Editing</p>
+            </div>
+            <p class="sub">Start with Photo-Editing, unleash your creativity!</p>
+            <div class="div-container">
+                <p>
+                    Fire up your imagination with the most powerful Photo-Editing yet.<br>
+                    Remove distractions in a click. Get amazing photorealistic results with Generative Fill.<br>
+                    Add more picture to your picture with Generative Expand.<br>
+                </p>
+            </div>
+        </div>
+        <div class="btn">
+            <button class="btn-1"><a href="./index.html">Get Started</a></button>
+        </div>
+    </main>
+    <section class="features-section">
+        <div class="feature">
+            <img src="./images/WhatsApp Image 2025-01-25 at 13.13.08.jpeg" alt="Generative Fill">
+            <div class="feature-content">
+                <h3 class="feature-title">Next-gen Generative Fill</h3>
+                <p class="feature-description">Add rich, detailed elements that blend seamlessly into a scene using the
+                    most advanced Generative Fill yet.</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <img src="./images/Screenshot 2025-01-25 131516.png" alt="Add new backgrounds">
+            <div class="feature-content">
+                <h3 class="feature-title">Add new backgrounds instantly</h3>
+                <p class="feature-description">Use Generate Background to swap your scenery for a new setting that
+                    blends with your subject.</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <img src="./images/step-2-erase-unwanted-poeple-from-image-with-AI.webp" alt="Remove wires">
+            <div class="feature-content">
+                <h3 class="feature-title">Remove wires and people</h3>
+                <p class="feature-description">Tidy up your scene in a click. Automatically detect and delete unwanted
+                    elements.</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <img src="./images/WhatsApp Image 2025-01-25 at 13.07.57.jpeg" alt="Combine photos">
+            <div class="feature-content">
+                <h3 class="feature-title">Combine photos</h3>
+                <p class="feature-description">Use selection tools to cut out parts of images, then move them to create
+                    something new.</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <img src="./images/Transformative-Beauty-Photoshop-Skin-Retouching-Unveiled.webp" alt="Remix your pics">
+            <div class="feature-content">
+                <h3 class="feature-title">Remix your pics</h3>
+                <p class="feature-description">Fix flaws, swap backgrounds, and add effects to give your photos the look
+                    you want.</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <img src="./images/66cda61e7240eaa1e8d03338_double-exposure-portrait.webp" alt="Create the unexpected">
+            <div class="feature-content">
+                <h3 class="feature-title">Create the unexpected</h3>
+                <p class="feature-description">Blend and mash up photos, graphics, effects, and colors to create
+                    something entirely new.</p>
+            </div>
+        </div>
+
+        <div class="feature">
+            <img src="./images/drawing-paint-brush-with-paint-it_960782-124420.avif" alt="Fun at your fingertips">
+            <div class="feature-content">
+                <h3 class="feature-title">All kinds of fun at your fingertips</h3>
+                <p class="feature-description">Draw, paint, and dabble with digital brushes that work like the real
+                    thing.</p>
+            </div>
+        </div>
+        <div class="feature">
+            <img src="./images/wp-2023-12-00-oldrestore-photo-feature.avif" alt="Photo Recovery">
+            <div class="feature-content">
+                <h3 class="feature-title">Photo Recovery</h3>
+                <p class="feature-description">Bring back the vibrance and detail of old or damaged photos using
+                    powerful restoration tools.</p>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
